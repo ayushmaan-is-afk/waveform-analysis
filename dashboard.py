@@ -57,8 +57,7 @@ if page == "Predict":
                     st.subheader("Results")
                     
                     # Status
-                    col1, col2, col3 = st.columns(3)
-                    🔍 
+                    col1, col2, col3 = st.columns(3) 
                     with col1:
                         if result['status'] == 'FAULTY':
                             st.error(f"❌ {result['status']}")
@@ -190,4 +189,41 @@ elif page == "About":
     - **Backend:** FastAPI
     - **Frontend:** Streamlit
     - **Data:** Proprietary DCRM Dataset
+    - FOR MORE DETAILS, [CONTACT ME](mailto:ayushmaan.bhatnagar.work@gmail.com)
     """)
+    
+    # Define the footer HTML with embedded CSS
+footer_html = """
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0e1117;  /* ← Streamlit's default dark background */
+    color: #fafafa;              /* ← Streamlit's default text color */
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    border-top: 1px solid #262730;  /* subtle separator */
+}
+
+.footer a {
+    color: #4da6ff;  /* ← Streamlit's link color */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+</style>
+<div class="footer">
+    <span>Developed by Ayushmaan Bhatnagar | © 2026</span>
+    <span><a href="mailto:ayushmaan.bhatnagar.work@gmail.com">Contact Me</a></span>
+</div>
+"""
+
+st.markdown(footer_html, unsafe_allow_html=True)
