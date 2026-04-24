@@ -13,6 +13,12 @@ Trained on a proprietary dataset provided by the M.O.P., the model is able to pr
 4. Anomaly percentage  
 and several other statistics. 
 
+The model performance -
+![alt text](artifacts/plots/anomaly_score_distribution.png)
+
+![alt text](artifacts/plots/confusion_matrix.png)
+
+
 Upcoming features - 
 1. 1-D CNN to be able to read and predict from waveform graphs. 
 2. More accuracy and robustness with autoencoder(s).
