@@ -2,6 +2,8 @@
 
 *STATUS : Experimental / Reconstructed*
 
+**⚠️ This repository is a reconstruction of the SIH 2025 project, and does not represent the submitted implementation.**
+
 
 An experimental machine-learning approach to automated condition assessment of Extra-High Voltage (EHV) circuit breakers using DCRM test data.
 
@@ -25,21 +27,20 @@ Bounce behaviour
 These measurements can be difficult to analyse consistently because interpretation often depends on manual inspection and domain expertise.
 
 The goal of this project was to explore whether machine learning could assist engineers in identifying abnormal circuit-breaker behaviour from DCRM measurements.
-What our project does? 
 
-Using ISOLATION FOREST, we aim to mitigate human errors in the process of analysing the test results. 
-Trained on a proprietary dataset provided by the M.O.P., the model is able to predict the smallest of anomalies and provides the user with metrics such as -
+**What I Built**
+
+Rather than requiring a large collection of explicitly labelled failure examples, the idea was to learn the distribution of normal/expected behaviour and identify observations that deviate significantly from it.
+
+The main approach explored in this project was anomaly detection using Isolation Forest. 
+
+Trained on a proprietary dataset provided by the M.O.P., the model is able to flag a significant amount of anomalies(expect some deviation though) and provides the user with metrics such as -
 1. Status of the Circuit Breaker
 2. Severity(in case of damages)
 3. Anomaly Score
 4. Anomaly percentage  
 and several other statistics. 
 
-**What I Built**
-
-The main approach explored in this project was anomaly detection using Isolation Forest.
-
-Rather than requiring a large collection of explicitly labelled failure examples, the idea was to learn the distribution of normal/expected behaviour and identify observations that deviate significantly from it.
 
 The pipeline broadly consisted of:
 
@@ -62,13 +63,12 @@ The model performance -
 
 ![alt text](artifacts/plots/confusion_matrix.png)
 
-What I am working on- 
+**Potential Features-**
 1. 1-D CNN to be able to read and predict from waveform graphs. 
 2. More accuracy and robustness with autoencoder(s).
 3. Authentication.
 4. Predictive maintainance information.
 5. Enhanced Fault Isolation.
-
 
 
 **Example features**
