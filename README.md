@@ -3,14 +3,11 @@
 *STATUS : Experimental / Reconstructed*
 
 **⚠️ This repository is a reconstruction of the SIH 2025 project, and does not represent the submitted implementation.**
+*This repository contains a reconstruction of the work I developed during the Smart India Hackathon 2025 Finals. It is not the final implementation and does not contain every component of the original system. Some parts have been rebuilt from the project material and my recollection of the original work.*
+
 
 
 An experimental machine-learning approach to automated condition assessment of Extra-High Voltage (EHV) circuit breakers using DCRM test data.
-
-*This repository contains a reconstruction of the work I developed during the Smart India Hackathon 2025 Finals. It is not the final implementation and does not contain every component of the original system. Some parts have been rebuilt from the project material and my recollection of the original work.*
-
-The repository is primarily here to document the problem, the approach I explored, and the ML pipeline rather than present a production-ready system.
-
 
 **The Problem**
 
